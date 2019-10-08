@@ -79,7 +79,7 @@ public class ViewPDF extends AppCompatActivity {
             path = Environment.getExternalStorageDirectory().getAbsolutePath()+"/D3Code";
             dir = new File(path);
             if (!dir.exists()){
-                dir.mkdirs();
+                dir.mkdir();
             }
             file = new File(dir,name+" Resume.pdf");
             FileOutputStream fileOutputStream = new FileOutputStream(file);
